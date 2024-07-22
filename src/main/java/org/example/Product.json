@@ -1,0 +1,29 @@
+{
+  "product": {
+    "id": "12345",
+    "name": "Apple iPhone 12",
+    "description": "64GB, Blue",
+    "category": "Electronics",
+    "price": "699.99",
+    "available": true,
+    "rating": "4.5",
+    "reviews": [
+      {
+        "user": "JohnDoe",
+        "rating": "5",
+        "comment": "Great phone with amazing features."
+      },
+      {
+        "user": "JaneDoe",
+        "rating": "4",
+        "comment": "Good phone but a bit overpriced."
+      }
+    ],
+    "image_url": "https://example.com/images/iphone12.jpg",
+    "seller": {
+      "id": "9876",
+      "name": "Apple Inc.",
+      "contact": "support@apple.com"
+    }
+  }
+}
