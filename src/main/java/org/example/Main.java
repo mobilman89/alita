@@ -45,12 +45,12 @@ public class Main {
 //        2. Calculate the average price of all products
 //        3. Create a sublist with products where the price is less than 30.
 
-        Product MaxProduct = products.stream().max(Comparator.comparingDouble(Product::getPrice))
+        Product product = products.stream().max(Comparator.comparingDouble(Product::getPrice))
                 .orElseThrow(NoSuchElementException::new);
-        System.out.println(MaxProduct.getName());
+        System.out.println(product.getName());
         double averagePrice = products.stream().collect(Collectors.averagingDouble(Product::getPrice));
         System.out.println(averagePrice);
-        List<Product> products1 = products.stream().filter(e -> e.getPrice() < 30).collect(Collectors.toList());
-        products1.forEach(System.out::println);
+        List<Product> subList = products.stream().filter(e -> e.getPrice() < 30).collect(Collectors.toList());
+        subList.forEach(System.out::println);
     }
 }
